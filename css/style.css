@@ -1,0 +1,82 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: text-top;
+}
+.logo{
+    width: 23%;
+    padding: 1%;
+    height: auto;
+    text-align: center;
+}
+nav{
+    width: 73%;
+    padding: 1%;
+}
+ul{
+    width: 50%;
+    margin-left: auto;
+}
+.heroImg{
+    height: 600px;
+    padding: 25px;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+}
+footer{
+    background-color: #373738;   
+}
+
+footer li{
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px; 
+
+}
+
+footer ul{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+
+.flexContainer div{
+    width: 33%;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-areas: 'auto auto auto auto';
+}
+
+.workGrid div{
+    grid-area: auto;
+}
+
+@media only screen and (max-width: 600){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexContainer div{
+        width: 100%;
+    }
+    .workGrid{
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'auto auto auto auto';
+    } 
+    .workGrid div{
+        grid-area: auto;
+    }
+
+}
